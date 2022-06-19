@@ -40,8 +40,8 @@
 
             <!-- Text -->
             <p class="font-size-lg text-gray-700 mb-6" data-aos="fade-left" data-aos-delay="200">
-              <span class="text-primary">Spring 2021:</span> April 20, 2021 - April 22, 2021 <br>
-              <span class="text-primary">Fall 2021:</span> October 11, 2021 – October 13, 2021
+              <span class="text-primary" id="dates-spring">Spring 2021:</span> April 20, 2021 - April 22, 2021 <br>
+              <span class="text-primary" id="dates-fall">Fall 2021:</span> October 11, 2021 – October 13, 2021
             </p>
 
             <!-- Buttons -->
@@ -58,7 +58,7 @@
           <div class="col-12 col-md-5">
 
             <!-- Image -->
-            <img src="assets/img/illustrations/illustration-2.png" alt="..." class="img-fluid mw-130 float-right mb-6 mb-md-0" data-aos="fade-right">
+            <img src="assets/img/illustrations/agenda-wall.svg" alt="Creating an agenda illustration" class="img-fluid mw-100 float-right mb-6 mb-md-0" data-aos="fade-right">
 
           </div>
         </div> <!-- / .row -->
@@ -157,7 +157,7 @@
                 <div class="col-md-4 position-relative">
 
                   <!-- Image -->
-                  <img src="assets/img/illustrations/illustration-8.png" class="h-75 position-absolute right-0 mt-7 mr-n4" alt="...">
+                  <img src="assets/img/illustrations/opening-circle.svg" class="h-75 position-absolute left-1 mt-7 ml-2" alt="...">
 
                 </div>
                 <div class="col-md-8">
@@ -172,7 +172,7 @@
 
                     <!-- Text -->
                     <p class="text-muted mb-0">
-                      The Internet Identity Workshop has been finding, probing and solving identity issues twice every year since...<a href="/about.html#what">read more</a>
+                      The Internet Identity Workshop has been finding, probing and solving identity issues twice every year since...<a href="/about.html#what" class="text-primary">read more</a>
                     </p>
 
                   </div>
@@ -199,7 +199,7 @@
 
                     <!-- Text -->
                     <p class="text-muted mb-0">
-                      IIW is at its heart a participatory conference, it is an Open Space unConference. It has no keynotes or...<a href="/about.html#how">read more</a>
+                      IIW is at its heart a participatory conference, it is an Open Space unConference. It has no keynotes or...<a href="/about.html#how" class="text-primary">read more</a>
                     </p>
 
                   </div>
@@ -208,7 +208,7 @@
                 <div class="col-md-4">
 
                   <!-- Image -->
-                  <img src="assets/img/illustrations/illustration-6.png" class="h-75 position-absolute left-0 mt-7" alt="...">
+                  <img src="assets/img/illustrations/adeventure-map.svg" class="h-75 position-absolute right-0 mt-7 mr-4" alt="...">
 
                 </div>
               </div> <!-- / .row -->
@@ -225,7 +225,7 @@
                 <div class="col-md-4 position-relative">
 
                   <!-- Image -->
-                  <img src="assets/img/illustrations/illustration-2.png" class="h-75 position-absolute right-0 mt-6" alt="...">
+                  <img src="assets/img/illustrations/conversations.svg" class="h-100 position-absolute right-0 bottom-0 mt-7" alt="...">
 
                 </div>
                 <div class="col-md-8">
@@ -240,7 +240,7 @@
 
                     <!-- Text -->
                     <p class="text-muted mb-0">
-                      You belong at IIW! This is the time and place that you get to discuss, share your knowledge, work on and learn about...<a href="/about.html#relevance">read more</a>
+                      You belong at IIW! This is the time and place that you get to discuss, share your knowledge, work on and learn about...<a href="/about.html#relevance" class="text-primary">read more</a>
                     </p>
 
                   </div>
@@ -277,39 +277,15 @@
         </div> <!-- / .row -->
       </div> <!-- / .container -->
       <div class="container">
-          <div class="row justify-content-center"> <!-- Card Row -->
+          <div class="row justify-content-center col-sm-12 mx-0"> <!-- Card Row -->
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #DF4759;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #DF4759;" id="sustaining-sponsor">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
                   <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #DF4759;">
-                    @@include("assets/img/brands/logotype/airbnb.svg")
-                  </div>
-
-
-                  <!-- Text -->
-                  <p class="text-gray-700 mb-5">
-                    Platform Sponsor
-                  </p>
-
-                  <!-- Link -->
-                  <a href="#!" style="color: #DF4759;">Read more</a>
-
-                </div>
-              </div>
-
-            </div>
-            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
-
-              <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;">
-                <div class="card-body text-center">
-
-                  <!-- Icon -->
-                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #fd7e14;">
                     @@include("assets/img/brands/logotype/airbnb.svg")
                   </div>
 
@@ -320,6 +296,30 @@
                   </p>
 
                   <!-- Link -->
+                  <a href="#!" style="color: #DF4759;">Read more</a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
+
+              <!-- Card -->
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="conference-dinner">
+                <div class="card-body text-center">
+
+                  <!-- Icon -->
+                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #fd7e14;">
+                    @@include("assets/img/brands/logotype/airbnb.svg")
+                  </div>
+
+
+                  <!-- Text -->
+                  <p class="text-gray-700 mb-5">
+                    Conference Dinner
+                  </p>
+
+                  <!-- Link -->
                   <a href="#!" style="color: #fd7e14;">Read more</a>
 
                 </div>
@@ -329,7 +329,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #ffd60a;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #ffd60a;" id="diversity-and-inclusion-scholarships">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -340,7 +340,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    The Gardens
+                    Diversity and Inclusion Scholarships
                   </p>
 
                   <!-- Link -->
@@ -353,7 +353,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #42BA96;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #42BA96;" id="Welcome Dinner">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -364,7 +364,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Rocket Chat
+                    Welcome Dinner
                   </p>
 
                   <!-- Link -->
@@ -377,18 +377,18 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #7C69EF;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #7C69EF;" id="Barista">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
                   <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #7C69EF;">
-                    @@include("assets/img/brands/logotype/dribbble.svg")
+                    @@include("assets/img/brands/logotype/discord.svg")
                   </div>
 
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Opening Circle & Agenda Creation
+                    Barista
                   </p>
 
                   <!-- Link -->
@@ -401,7 +401,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #DF4759;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #DF4759;" id="conference-reception">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -412,7 +412,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Demo Hour – Day 1
+                    Conference Reception
                   </p>
 
                   <!-- Link -->
@@ -425,7 +425,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="welcome-reception">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -436,7 +436,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Demo Hour – Day 2
+                    Welcome Reception
                   </p>
 
                   <!-- Link -->
@@ -449,7 +449,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #ffd60a;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #ffd60a;" id="projectors">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -460,7 +460,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Breakout Spaces <br> A - D
+                    Projectors
                   </p>
 
                   <!-- Link -->
@@ -473,7 +473,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #42BA96;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #42BA96;" id="qiqo-workshop-hub">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -484,7 +484,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Breakout Spaces <br> E - H
+                    Qiqo Workshop Hub
                   </p>
 
                   <!-- Link -->
@@ -497,7 +497,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #7C69EF;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #7C69EF;" id="wifi">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -508,7 +508,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Breakout Spaces <br> I - L
+                    Wi-Fi
                   </p>
 
                   <!-- Link -->
@@ -521,7 +521,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #DF4759;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #DF4759;" id="power-and-tables">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -532,7 +532,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Breakout Spaces <br> M - P
+                    Power and Tables
                   </p>
 
                   <!-- Link -->
@@ -545,7 +545,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="lunch-day-1">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -556,7 +556,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Grand Hall Chat
+                    Lunch - Day 1
                   </p>
 
                   <!-- Link -->
@@ -569,7 +569,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #ffd60a;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #ffd60a;" id="lunch-day-2">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -580,7 +580,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Coffee Cart Chat
+                    Lunch - Day 2
                   </p>
 
                   <!-- Link -->
@@ -593,7 +593,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #42BA96;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #42BA96;" id="lunch-day-3">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -604,7 +604,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    Snack Table Chat
+                    Lunch - Day 3
                   </p>
 
                   <!-- Link -->
@@ -617,7 +617,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #7C69EF;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #7C69EF;" id="demo-hour">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -628,7 +628,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    DocCenter/BoP - Day 1
+                    Demo Hour
                   </p>
 
                   <!-- Link -->
@@ -641,7 +641,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #DF4759;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #DF4759;" id="breakfast-day-1">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -652,7 +652,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    DocCenter/BoP - Day 2
+                    Breakfast - Day 1
                   </p>
 
                   <!-- Link -->
@@ -665,7 +665,7 @@
             <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="breakfast-day-2">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
@@ -676,7 +676,7 @@
 
                   <!-- Text -->
                   <p class="text-gray-700 mb-5">
-                    DocCenter/BoP - Day 3
+                    Breakfast - Day 2
                   </p>
 
                   <!-- Link -->
@@ -686,14 +686,182 @@
               </div>
 
             </div>
-            <div class="col-3 col-sm-12 col-md-4 col-lg-3 mb-6">
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #ffd60a;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #ffd60a;" id="breakfast-day-3">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
                   <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #ffd60a;">
+                    @@include("assets/img/brands/logotype/dribbble.svg")
+                  </div>
+
+
+                  <!-- Text -->
+                  <p class="text-gray-700 mb-5">
+                    Breakfast - Day 3
+                  </p>
+
+                  <!-- Link -->
+                  <a href="#!" style="color: #ffd60a;">Read more</a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
+
+              <!-- Card -->
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #42BA96;" id="snack-table-day-1">
+                <div class="card-body text-center">
+
+                  <!-- Icon -->
+                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #42BA96;">
+                    @@include("assets/img/brands/logotype/dribbble.svg")
+                  </div>
+
+
+                  <!-- Text -->
+                  <p class="text-gray-700 mb-5">
+                    Snack Table - Day 1
+                  </p>
+
+                  <!-- Link -->
+                  <a href="#!" style="color: #42BA96;">Read more</a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
+
+              <!-- Card -->
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #7C69EF;" id="snack-table-day-2">
+                <div class="card-body text-center">
+
+                  <!-- Icon -->
+                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #7C69EF;">
+                    @@include("assets/img/brands/logotype/dribbble.svg")
+                  </div>
+
+
+                  <!-- Text -->
+                  <p class="text-gray-700 mb-5">
+                    Snack Table - Day 2
+                  </p>
+
+                  <!-- Link -->
+                  <a href="#!" style="color: #7C69EF;">Read more</a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
+
+              <!-- Card -->
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="snack-table-day-3">
+                <div class="card-body text-center">
+
+                  <!-- Icon -->
+                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #fd7e14;">
+                    @@include("assets/img/brands/logotype/dribbble.svg")
+                  </div>
+
+
+                  <!-- Text -->
+                  <p class="text-gray-700 mb-5">
+                    Snack Table - Day 3
+                  </p>
+
+                  <!-- Link -->
+                  <a href="#!" style="color: #fd7e14;">Read more</a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
+
+              <!-- Card -->
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="documentation-center-day-1">
+                <div class="card-body text-center">
+
+                  <!-- Icon -->
+                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #fd7e14;">
+                    @@include("assets/img/brands/logotype/dribbble.svg")
+                  </div>
+
+
+                  <!-- Text -->
+                  <p class="text-gray-700 mb-5">
+                    Documentation Center - Day 1
+                  </p>
+
+                  <!-- Link -->
+                  <a href="#!" style="color: #fd7e14;">Read more</a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
+
+              <!-- Card -->
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="documentation-center-day-2">
+                <div class="card-body text-center">
+
+                  <!-- Icon -->
+                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #fd7e14;">
+                    @@include("assets/img/brands/logotype/dribbble.svg")
+                  </div>
+
+
+                  <!-- Text -->
+                  <p class="text-gray-700 mb-5">
+                    Documentation Center - Day 2
+                  </p>
+
+                  <!-- Link -->
+                  <a href="#!" style="color: #fd7e14;">Read more</a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
+
+              <!-- Card -->
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="documentation-center-day-3">
+                <div class="card-body text-center">
+
+                  <!-- Icon -->
+                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #fd7e14;">
+                    @@include("assets/img/brands/logotype/dribbble.svg")
+                  </div>
+
+
+                  <!-- Text -->
+                  <p class="text-gray-700 mb-5">
+                    Documentation Center - Day 3
+                  </p>
+
+                  <!-- Link -->
+                  <a href="#!" style="color: #fd7e14;">Read more</a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
+
+              <!-- Card -->
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="open-gifting-day-1">
+                <div class="card-body text-center">
+
+                  <!-- Icon -->
+                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #fd7e14;">
                     @@include("assets/img/brands/logotype/dribbble.svg")
                   </div>
 
@@ -704,20 +872,20 @@
                   </p>
 
                   <!-- Link -->
-                  <a href="#!" style="color: #ffd60a;">Read more</a>
+                  <a href="#!" style="color: #fd7e14;">Read more</a>
 
                 </div>
               </div>
 
             </div>
-            <div class="col-3 col-sm-12 col-md-4 col-lg-3 mb-6">
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #42BA96;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="open-gifting-day-2">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
-                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #42BA96;">
+                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #fd7e14;">
                     @@include("assets/img/brands/logotype/dribbble.svg")
                   </div>
 
@@ -728,20 +896,20 @@
                   </p>
 
                   <!-- Link -->
-                  <a href="#!" style="color: #42BA96;">Read more</a>
+                  <a href="#!" style="color: #fd7e14;">Read more</a>
 
                 </div>
               </div>
 
             </div>
-            <div class="col-3 col-sm-12 col-md-4 col-lg-3 mb-6">
+            <div class="col col-sm-12 col-md-4 col-lg-3 mb-6">
 
               <!-- Card -->
-              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #7C69EF;">
+              <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fd7e14;" id="open-gifting-day-3">
                 <div class="card-body text-center">
 
                   <!-- Icon -->
-                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #7C69EF;">
+                  <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #fd7e14;">
                     @@include("assets/img/brands/logotype/dribbble.svg")
                   </div>
 
@@ -752,7 +920,7 @@
                   </p>
 
                   <!-- Link -->
-                  <a href="#!" style="color: #7C69EF;">Read more</a>
+                  <a href="#!" style="color: #fd7e14;">Read more</a>
 
                 </div>
               </div>
@@ -814,7 +982,7 @@
 
                     <!-- Avatar -->
                     <div class="avatar avatar-xl mb-4 mr-4">
-                      <img src="../assets/img/avatars/avatar-william-heath.jpg" alt="..." class="avatar-img rounded-circle">
+                      <img src="assets/img/avatars/avatar-william-heath.jpg" alt="..." class="avatar-img rounded-circle">
                     </div>
 
                     <!-- Author -->
@@ -857,7 +1025,7 @@
 
                     <!-- Avatar -->
                     <div class="avatar avatar-xl mb-4 mr-4">
-                      <img src="../assets/img/avatars/avatar-mike-schwartz.jpg" alt="..." class="avatar-img rounded-circle">
+                      <img src="assets/img/avatars/avatar-mike-schwartz.jpg" alt="..." class="avatar-img rounded-circle">
                     </div>
 
                     <!-- Author -->
@@ -900,7 +1068,7 @@
 
                     <!-- Avatar -->
                     <div class="avatar avatar-xl mb-4 mr-4">
-                      <img src="../assets/img/avatars/avatar-justin-richer.jpg" alt="..." class="avatar-img rounded-circle">
+                      <img src="assets/img/avatars/avatar-justin-richer.jpg" alt="..." class="avatar-img rounded-circle">
                     </div>
 
                     <!-- Author -->
@@ -943,7 +1111,7 @@
 
                     <!-- Avatar -->
                     <div class="avatar avatar-xl mb-4 mr-4">
-                      <img src="../assets/img/avatars/avatar-jim-fenton.jpg" alt="..." class="avatar-img rounded-circle">
+                      <img src="assets/img/avatars/avatar-jim-fenton.jpg" alt="..." class="avatar-img rounded-circle">
                     </div>
 
                     <!-- Author -->
@@ -990,7 +1158,7 @@
                         <span class="avatar-title rounded-circle">CC</span>
                       </div>
                       <div class="avatar avatar-xl mb-4 mr-4">
-                        <img src="../assets/img/avatars/avatar-heather-dahl.jpg" alt="..." class="avatar-img rounded-circle">
+                        <img src="assets/img/avatars/avatar-heather-dahl.jpg" alt="..." class="avatar-img rounded-circle">
                       </div>
                     </div>
 
@@ -1034,7 +1202,7 @@
 
                     <!-- Avatar -->
                     <div class="avatar avatar-xl mb-4 mr-4">
-                      <img src="../assets/img/avatars/avatar-stina-ehrensvard.jpg" alt="..." class="avatar-img rounded-circle">
+                      <img src="assets/img/avatars/avatar-stina-ehrensvard.jpg" alt="..." class="avatar-img rounded-circle">
                     </div>
 
                     <!-- Author -->
@@ -1077,7 +1245,7 @@
 
                     <!-- Avatar -->
                     <div class="avatar avatar-xl mb-4 mr-4">
-                      <img src="../assets/img/avatars/avatar-don-thibeau.jpg" alt="..." class="avatar-img rounded-circle">
+                      <img src="assets/img/avatars/avatar-don-thibeau.jpg" alt="..." class="avatar-img rounded-circle">
                     </div>
 
                     <!-- Author -->
@@ -1120,7 +1288,7 @@
 
                     <!-- Avatar -->
                     <div class="avatar avatar-xl mb-4 mr-4">
-                      <img src="../assets/img/avatars/avatar-eve-maler.jpg" alt="..." class="avatar-img rounded-circle">
+                      <img src="assets/img/avatars/avatar-eve-maler.jpg" alt="..." class="avatar-img rounded-circle">
                     </div>
 
                     <!-- Author -->
@@ -1144,7 +1312,7 @@
 
     <!-- CTA
     ================================================== -->
-    <section class="py-10 py-md-13 bg-between" style="background-image: url(assets/img/illustrations/illustration-1-cropped.png), url(assets/img/illustrations/illustration-3-cropped.png);">
+    <section class="py-10 py-md-13 bg-between" style="background-image: url(assets/img/illustrations/agenda-wall.svg), url(assets/img/illustrations/coffee-cart.svg);">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -1159,13 +1327,15 @@
               So you don't take our word for why IIW is worth attending.
             </p>
 
-            <!-- Button -->
-            <a href="https://www.eventbrite.com/e/internet-identity-workshop-iiwxxxii-32-2021a-tickets-131551119941" class="btn btn-primary lift mr-3 px-7">
-              Register
-            </a>
-            <a href="/past-iiw.html" class="btn btn-primary-soft lift">
-              See Past IIW's
-            </a>
+            <!-- Buttons -->
+            <div class="text-center">
+              <a href="https://www.eventbrite.com/e/internet-identity-workshop-iiwxxxii-32-2021a-tickets-131551119941" class="btn btn-primary shadow lift mr-3">
+                Register <i class="fe fe-arrow-right d-none d-md-inline"></i>
+              </a>
+              <a href="/past-iiw.html" class="btn btn-primary-soft lift">
+                See Past IIW's
+              </a>
+            </div>
 
           </div>
         </div> <!-- / .row -->
