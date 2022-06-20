@@ -3,7 +3,7 @@
 //
 
 // Load dependencies
-// const autoprefixer = require("gulp-autoprefixer");
+const autoprefixer = require("gulp-autoprefixer");
 const browsersync = require("browser-sync").create();
 const cached = require("gulp-cached");
 const cleancss = require("gulp-clean-css");
@@ -13,7 +13,7 @@ const gulp = require("gulp");
 const gulpif = require("gulp-if");
 const npmdist = require("gulp-npm-dist");
 const replace = require("gulp-replace");
-// const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const uglify = require("gulp-uglify");
 const useref = require("gulp-useref");
 
@@ -106,14 +106,12 @@ gulp.task("watch", function () {
 });
 
 gulp.task("scss", function () {
-  return (
-    gulp
-      .src(paths.src.scss.main)
-      // .pipe(sass().on("error", sass.logError))
-      // .pipe(autoprefixer())
-      .pipe(gulp.dest(paths.src.css.dir))
-      .pipe(browsersync.stream())
-  );
+  return gulp
+    .src(paths.src.scss.main)
+    .pipe(sass().on("error", sass.logError))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest(paths.src.css.dir))
+    .pipe(browsersync.stream());
 });
 
 gulp.task("fileinclude", function (callback) {
